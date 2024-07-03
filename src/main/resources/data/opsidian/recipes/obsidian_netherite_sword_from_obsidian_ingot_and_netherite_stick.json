@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " # ",
+    " # ",
+    " S "
+  ],
+  "key": {
+    "#": {
+      "item": "opsidian:obsidian_ingot"
+    },
+    "S": {
+      "item": "opsidian:netherite_stick"
+    }
+  },
+  "result": {
+    "item": "opsidian:obsidian_netherite_sword"
+  }
+}

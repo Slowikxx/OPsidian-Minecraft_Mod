@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "opsidian:item/obsidian_netherite_axe"
+  }
+}

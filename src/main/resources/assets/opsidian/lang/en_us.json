@@ -1,5 +1,9 @@
 {
   "item.opsidian.obsidian_ingot": "Obsidian Ingot",
   "item.opsidian.netherite_stick": "Netherite Stick",
-  "item.opsidian.obsidian_netherite_pickaxe": "Obsidian-Netherite Pickaxe"
+  "item.opsidian.obsidian_netherite_pickaxe": "Obsidian-Netherite Pickaxe",
+  "item.opsidian.obsidian_netherite_sword": "Obsidian-Netherite Sword",
+  "item.opsidian.obsidian_netherite_axe": "Obsidian-Netherite Axe",
+  "item.opsidian.obsidian_netherite_shovel": "Obsidian-Netherite Shovel",
+  "item.opsidian.obsidian_netherite_hoe": "Obsidian-Netherite Hoe"
 }

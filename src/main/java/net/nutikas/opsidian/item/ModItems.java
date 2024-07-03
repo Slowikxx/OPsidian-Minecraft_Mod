@@ -3,10 +3,8 @@ package net.nutikas.opsidian.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.*;
 import net.nutikas.opsidian.OPsidian;
-import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -18,12 +16,22 @@ public class ModItems {
     public static final Item NETHERITE_STICK = registerItem("netherite_stick", new Item(new FabricItemSettings()));
 
     // tools
-    public static final Item OBSIDIAN_NETHERITE_PICKAXE = registerItem("obsidian_netherite_pickaxe", new PickaxeItem(ModToolMaterial.OBSIDIAN, 2, 2f, new FabricItemSettings()));
+    public static final Item OBSIDIAN_NETHERITE_PICKAXE = registerItem("obsidian_netherite_pickaxe", new PickaxeItem(ModToolMaterial.OBSIDIAN, 3, 2f, new FabricItemSettings()));
+    public static final Item OBSIDIAN_NETHERITE_SWORD = registerItem("obsidian_netherite_sword", new SwordItem(ModToolMaterial.OBSIDIAN, 8, 4f, new FabricItemSettings()));
+    public static final Item OBSIDIAN_NETHERITE_AXE = registerItem("obsidian_netherite_axe", new AxeItem(ModToolMaterial.OBSIDIAN, 5, 3f, new FabricItemSettings()));
+    public static final Item OBSIDIAN_NETHERITE_SHOVEL = registerItem("obsidian_netherite_shovel", new ShovelItem(ModToolMaterial.OBSIDIAN,2 , 2f, new FabricItemSettings()));
+    public static final Item OBSIDIAN_NETHERITE_HOE = registerItem("obsidian_netherite_hoe", new HoeItem(ModToolMaterial.OBSIDIAN, 1, 1f, new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
+        // items
         entries.add(OBSIDIAN_INGOT);
         entries.add(NETHERITE_STICK);
+        // tools
         entries.add(OBSIDIAN_NETHERITE_PICKAXE);
+        entries.add(OBSIDIAN_NETHERITE_SWORD);
+        entries.add(OBSIDIAN_NETHERITE_AXE);
+        entries.add(OBSIDIAN_NETHERITE_SHOVEL);
+        entries.add(OBSIDIAN_NETHERITE_HOE);
     }
 
     private static Item registerItem(String name, Item item) {
