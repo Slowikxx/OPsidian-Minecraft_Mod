@@ -2,6 +2,7 @@ package net.nutikas.opsidian;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.nutikas.opsidian.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,8 +13,6 @@ public class OPsidian implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
 	}
 }
