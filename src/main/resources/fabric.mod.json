@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "opsidian",
+	"version": "${version}",
+	"name": "OPsidian",
+	"description": "This mod is making obsidian useful by allowing you to create amazingly powerful tools with it.",
+	"authors": [
+		"Nutikas"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/opsidian/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nutikas.opsidian.OPsidian"
+		],
+		"client": [
+			"net.nutikas.opsidian.OPsidianClient"
+		],
+		"fabric-datagen": [
+			"net.nutikas.opsidian.OPsidianDataGenerator"
+		]
+	},
+	"mixins": [
+		"opsidian.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
