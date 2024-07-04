@@ -6,7 +6,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    OBSIDIAN(6, 3000, 35.0f, 4.5f, 26, () -> Ingredient.ofItems(ModItems.OBSIDIAN_INGOT) );
+    OBSIDIAN(5, 3000, 35.0f, 4.5f, 26, () -> Ingredient.ofItems(ModItems.OBSIDIAN_INGOT) );
 
     private final int miningLevel;
     private final int itemDurability;
