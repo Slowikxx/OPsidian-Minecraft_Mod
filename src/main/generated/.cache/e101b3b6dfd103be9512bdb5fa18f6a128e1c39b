@@ -1,8 +1,8 @@
-// 1.20.1	2024-07-05T20:28:27.5184183	OPsidian/Model Definitions
+// 1.20.1	2024-07-05T20:40:58.4717548	OPsidian/Model Definitions
 ab6659eb6f467ea18ffe9d8822f22c90578e8305 assets\opsidian\models\item\obsidian_helmet_amethyst_trim.json
 5948b2aaf27c0cdc64eaec3ff1ad0217bafdcb40 assets\opsidian\models\item\obsidian_chestplate_copper_trim.json
-f589d568bea1d84674c7f37c58431414cbcd5053 assets\opsidian\models\item\obsidian_chestplate_emerald_trim.json
 22641633e4170a1e5aafad30fe32157a1bf3bf2b assets\opsidian\models\item\obsidian_netherite_axe.json
+f589d568bea1d84674c7f37c58431414cbcd5053 assets\opsidian\models\item\obsidian_chestplate_emerald_trim.json
 861737e881b03dd3c61db1b449b661583cd71472 assets\opsidian\models\item\obsidian_leggings_netherite_trim.json
 9a9c637206df93405955776adb1a10ff8c484095 assets\opsidian\models\item\obsidian_boots_iron_trim.json
 7c998c300829556d7a5f54bf7c33155640dfd53f assets\opsidian\models\item\obsidian_boots_gold_trim.json
@@ -31,8 +31,8 @@ a146d7676816c1ab4c500b8d1770d717b7d82d6f assets\opsidian\models\item\obsidian_ne
 334803b41089ccae6a2f8f9ea5335a166360bffb assets\opsidian\models\item\obsidian_chestplate_netherite_trim.json
 5ef8f482fb976416f7280fd63f7e02cfd270754e assets\opsidian\models\item\obsidian_boots_redstone_trim.json
 b5c88a58e8cd75514de78abb6955761f6e44d362 assets\opsidian\models\item\obsidian_helmet_quartz_trim.json
-c5b0480e65efe1ea84a13e161bb1dfbe220f2616 assets\opsidian\models\item\netherite_stick.json
 7dd6dc2ffcbfc9b353121dd3d169d1610076d475 assets\opsidian\models\item\obsidian_netherite_hoe.json
+c5b0480e65efe1ea84a13e161bb1dfbe220f2616 assets\opsidian\models\item\netherite_stick.json
 491e422c120f9345080aed44d2e830b3a09bd53d assets\opsidian\models\item\obsidian_leggings_iron_trim.json
 3371110944238a16480dde15943cec5e20e76da7 assets\opsidian\models\item\obsidian_chestplate_gold_trim.json
 937f3cc6afa001c6dfdfa94e174bed82aa60f5fc assets\opsidian\models\item\obsidian_ingot.json
