@@ -3,6 +3,7 @@ package net.nutikas.opsidian;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.nutikas.opsidian.item.ModItemGroups;
 import net.nutikas.opsidian.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +19,7 @@ public class OPsidian implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 
 		// Registering the block break event

@@ -1,8 +1,6 @@
 package net.nutikas.opsidian.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.nutikas.opsidian.OPsidian;
 import net.minecraft.registry.Registries;
@@ -29,29 +27,10 @@ public class ModItems {
     public static final Item OBSIDIAN_LEGGINGS = registerItem("obsidian_leggings", new ArmorItem(ModArmorMaterial.OBSIDIAN, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item OBSIDIAN_BOOTS = registerItem("obsidian_boots", new ArmorItem(ModArmorMaterial.OBSIDIAN, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
-    private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        // items
-        entries.add(OBSIDIAN_INGOT);
-        entries.add(NETHERITE_STICK);
-        // tools
-        entries.add(OBSIDIAN_NETHERITE_PICKAXE);
-        entries.add(OBSIDIAN_NETHERITE_SWORD);
-        entries.add(OBSIDIAN_NETHERITE_AXE);
-        entries.add(OBSIDIAN_NETHERITE_SHOVEL);
-        entries.add(OBSIDIAN_NETHERITE_HOE);
-        //armor
-        entries.add(OBSIDIAN_HELMET);
-        entries.add(OBSIDIAN_CHESTPLATE);
-        entries.add(OBSIDIAN_LEGGINGS);
-        entries.add(OBSIDIAN_BOOTS);
-    }
-
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(OPsidian.MOD_ID, name), item);
     }
     public static void registerModItems() {
         OPsidian.LOGGER.info("Registering Mod Items for" + OPsidian.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
 }
