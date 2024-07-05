@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "opsidian:obsidian_ingot"
+    },
+    "S": {
+      "item": "opsidian:netherite_stick"
+    }
+  },
+  "pattern": [
+    "## ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "opsidian:obsidian_netherite_hoe"
+  },
+  "show_notification": true
+}

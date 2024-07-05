@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "opsidian:obsidian_helmet",
+    "opsidian:obsidian_chestplate",
+    "opsidian:obsidian_leggings",
+    "opsidian:obsidian_boots"
+  ]
+}
