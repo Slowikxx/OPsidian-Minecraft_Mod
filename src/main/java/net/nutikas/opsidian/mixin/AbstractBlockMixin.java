@@ -36,7 +36,10 @@ public class AbstractBlockMixin {
                                      CallbackInfoReturnable<Float> cir, float hardness) {
         ItemStack stackInHand = player.getStackInHand(Hand.MAIN_HAND);
 
-        if (state.isOf(Blocks.BEDROCK) || state.isOf(Blocks.END_PORTAL_FRAME) && hardness == -1.0F && stackInHand.getItem() == ModItems.OBSIDIAN_NETHERITE_PICKAXE) {
+
+        if ((state.isOf(Blocks.BEDROCK) || state.isOf(Blocks.END_PORTAL_FRAME)) &&
+                hardness == -1.0F &&
+                stackInHand.getItem() == ModItems.OBSIDIAN_NETHERITE_PICKAXE) {
             float blockBreakingSpeed = player.getBlockBreakingSpeed(state);
             cir.setReturnValue(blockBreakingSpeed / BLOCK_HARDNESS / EFFECTIVE_TOOL_MODIFIER);
         }
