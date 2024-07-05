@@ -8,6 +8,7 @@ import net.nutikas.opsidian.OPsidian;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.nutikas.opsidian.item.custom.ModArmorItem;
 
 public class ModItems {
 
@@ -22,6 +23,12 @@ public class ModItems {
     public static final Item OBSIDIAN_NETHERITE_SHOVEL = registerItem("obsidian_netherite_shovel", new ShovelItem(ModToolMaterial.OBSIDIAN,2 , 2f, new FabricItemSettings()));
     public static final Item OBSIDIAN_NETHERITE_HOE = registerItem("obsidian_netherite_hoe", new HoeItem(ModToolMaterial.OBSIDIAN, 1, 1f, new FabricItemSettings()));
 
+    // armor
+    public static final Item OBSIDIAN_HELMET = registerItem("obsidian_helmet", new ModArmorItem(ModArmorMaterial.OBSIDIAN, ModArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item OBSIDIAN_CHESTPLATE = registerItem("obsidian_chestplate", new ArmorItem(ModArmorMaterial.OBSIDIAN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item OBSIDIAN_LEGGINGS = registerItem("obsidian_leggings", new ArmorItem(ModArmorMaterial.OBSIDIAN, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item OBSIDIAN_BOOTS = registerItem("obsidian_boots", new ArmorItem(ModArmorMaterial.OBSIDIAN, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         // items
         entries.add(OBSIDIAN_INGOT);
@@ -32,6 +39,11 @@ public class ModItems {
         entries.add(OBSIDIAN_NETHERITE_AXE);
         entries.add(OBSIDIAN_NETHERITE_SHOVEL);
         entries.add(OBSIDIAN_NETHERITE_HOE);
+        //armor
+        entries.add(OBSIDIAN_HELMET);
+        entries.add(OBSIDIAN_CHESTPLATE);
+        entries.add(OBSIDIAN_LEGGINGS);
+        entries.add(OBSIDIAN_BOOTS);
     }
 
     private static Item registerItem(String name, Item item) {

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 import net.nutikas.opsidian.item.ModItems;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -30,5 +31,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.OBSIDIAN_NETHERITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.OBSIDIAN_NETHERITE_HOE, Models.HANDHELD);
 
+        //armor
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.OBSIDIAN_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.OBSIDIAN_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.OBSIDIAN_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.OBSIDIAN_BOOTS));
     }
 }

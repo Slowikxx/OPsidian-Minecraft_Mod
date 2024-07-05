@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.nutikas.opsidian.item.ModItems;
@@ -18,5 +19,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.ITEM, new Identifier("fabric", "tools/needs_tool_level_5"))).add(ModItems.OBSIDIAN_NETHERITE_PICKAXE);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR).add(ModItems.OBSIDIAN_HELMET).add(ModItems.OBSIDIAN_CHESTPLATE).add(ModItems.OBSIDIAN_LEGGINGS).add(ModItems.OBSIDIAN_BOOTS);
     }
 }

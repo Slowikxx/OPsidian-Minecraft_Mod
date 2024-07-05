@@ -82,5 +82,38 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.OBSIDIAN_INGOT), conditionsFromItem(ModItems.OBSIDIAN_INGOT))
                 .criterion(hasItem(ModItems.NETHERITE_STICK), conditionsFromItem(ModItems.NETHERITE_STICK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.OBSIDIAN_NETHERITE_HOE)));
+
+        // armor
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.OBSIDIAN_HELMET, 1)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("   ")
+                .input('#', ModItems.OBSIDIAN_INGOT)
+                .criterion(hasItem(ModItems.OBSIDIAN_INGOT), conditionsFromItem(ModItems.OBSIDIAN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.OBSIDIAN_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.OBSIDIAN_CHESTPLATE, 1)
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.OBSIDIAN_INGOT)
+                .criterion(hasItem(ModItems.OBSIDIAN_INGOT), conditionsFromItem(ModItems.OBSIDIAN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.OBSIDIAN_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.OBSIDIAN_LEGGINGS, 1)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.OBSIDIAN_INGOT)
+                .criterion(hasItem(ModItems.OBSIDIAN_INGOT), conditionsFromItem(ModItems.OBSIDIAN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.OBSIDIAN_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.OBSIDIAN_BOOTS, 1)
+                .pattern("   ")
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.OBSIDIAN_INGOT)
+                .criterion(hasItem(ModItems.OBSIDIAN_INGOT), conditionsFromItem(ModItems.OBSIDIAN_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.OBSIDIAN_BOOTS)));
     }
 }
